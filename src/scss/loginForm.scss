@@ -1,0 +1,106 @@
+/* loginForm component */
+$loginForm-blue-color: #1A4F8B;
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    padding: .8rem;
+    /* Might've used Google font instead - ask designer if necessary. Importing font will slightly decrease performance */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.loginForm__formRow {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.loginForm__illustration {
+
+}
+
+.loginForm__header {
+
+}
+
+.loginForm__inputText {
+    flex: 1;
+    border: .1rem solid #c3c3c3;
+    border-radius: .5rem;
+    
+}
+
+.loginForm__inputText {
+    padding: 1.5rem 1.5rem 1.5rem 4rem;
+    &:hover {
+        border: .1rem solid $loginForm-blue-color;
+    }
+    &:hover + .loginForm__inputText__svg .loginForm__inputText__svg__path {
+        fill: $loginForm-blue-color;
+    }
+    &:hover::placeholder {
+        color: $loginForm-blue-color;
+    }
+}
+
+.loginForm__inputText__svg {
+    position: absolute;
+    left: 2rem;
+    top: 2.2rem;
+}
+
+.loginForm__forgotPassword {
+    color: $loginForm-blue-color;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.loginForm__button {
+    background: $loginForm-blue-color;
+    border-radius: .8rem;
+    padding: 1.5rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 0 .5rem #c3c3c3; /* maybe filter: brightness(.9); */
+    }
+    &:active {
+        box-shadow: inset 0 0 .5rem #c3c3c3;
+    }
+}
+
+.loginForm__button--fullWidth {
+    flex: 1;
+}
+
+.loginForm__button--halfWidth {
+    flex: 1;
+    padding: 1rem;
+}
+
+.loginForm__button--facebook {
+    background: #385C8E;
+}
+
+.loginForm__button--google {
+    background: #F14436;
+}
+
+.loginForm__helpText {
+    color: #B0B0B0;
+}
+
+.loginForm__helpText__link {
+    color: $loginForm-blue-color;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}

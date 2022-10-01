@@ -1,0 +1,75 @@
+/* login.html */
+.login {
+    width: 380px; /* demo styles */
+    margin: 0 auto; /* demo styles */
+}
+
+.login .loginForm__button--facebook {
+    margin-right: 1.6rem;
+}
+
+/* password.html */
+.password {
+    width: 380px; /* demo styles */
+    margin: 0 auto; /* demo styles */
+}
+
+/**
+  * make it pixel-perfect-ish according to the provided design (necessary?) just in case. :has doesn't work in all browsers,
+  * but that's an exercise, right?
+  * Better way to do it is to have individual classes on rows..., like .loginForm__formRow--illustration
+  *--------------------
+  * Update: Replaced with marginUtil.scss
+  *--------------------
+  */
+// .login .loginForm__formRow:has(>.loginForm__illustration) {
+//     margin-bottom: -.2rem;
+// }
+
+// .login .loginForm__formRow:has(>.loginForm__header) {
+    
+// }
+
+// .login .loginForm__formRow:has(>.loginForm__inputText) {
+//     margin-top: -.5rem;
+// }
+
+// .login .loginForm__formRow:has(>.loginForm__inputText) + .loginForm__formRow {
+//     margin-top: 1.7rem;
+// }
+
+// .login .loginForm__formRow:has(>.loginForm__forgotPassword) {
+//     margin-top: 0 !important; /* maybe ok for page-specific styles but NOT for components. Ideally should be avoided. */
+// }
+
+// .login .loginForm__formRow:has(>.loginForm__button--fullWidth) {
+//     margin-top: 4rem;
+// }
+
+// .login .loginForm__formRow:has(>.loginForm__helpText) {
+//     margin-top: 3.1rem; 
+// }
+
+// .login .loginForm__formRow:has(>.loginForm__button--halfWidth) {
+//     margin-top: 1.8rem;
+// }
+
+// .password .loginForm__formRow:has(>.loginForm__illustration) {
+//     margin-top: 5.6rem;
+// }
+
+// .password .loginForm__formRow:has(>.loginForm__header) {
+//     margin-top: -.3rem;
+// }
+
+// .password .loginForm__formRow:has(>.loginForm__inputText) {
+//     margin-top: -.3rem;
+// }
+
+// .password .loginForm__formRow:has(>.loginForm__button--fullWidth) {
+//     margin-top: 1.7rem;
+// }
+
+// .password .loginForm__formRow:has(>.loginForm__helpText) {
+//     margin-top: 18rem;
+// }
