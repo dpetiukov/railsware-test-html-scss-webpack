@@ -1,4 +1,4 @@
-/* Classes for different margin-top values in rems */
+/* Classes for different margin values in rems */
 
 /* String replace function copied from StackOverflow */
 @function str-replace($string, $search, $replace: '') {
@@ -18,4 +18,8 @@
     .librero-mt-#{$value_string}rem {
         margin-top: #{$value}rem;
     };
+}
+
+.librero-mr-1-6rem {
+    margin-right: 1.6rem;
 }
