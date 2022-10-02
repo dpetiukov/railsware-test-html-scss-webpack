@@ -8,7 +8,7 @@ Clone the repository to your local computer. Do:
 
 `npm start`
 
-login.html and password.html will open in the browser.
+**login.html** and **password.html** will open in the browser.
 
 ## SCSS
 
